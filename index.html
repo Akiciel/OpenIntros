@@ -1,581 +1,96 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Academy Stern 소개 아카이브</title>
-  <meta name="description" content="별이 내리는 궤도 도시, 아카데미 슈테른. 눈부신 청춘의 일상과 가혹한 출격 임무가 교차하는 소년소녀들의 전시 학원 세계관 아카이브.">
-  <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js" defer></script>
+  <title>Open Intros</title>
+  <meta name="description" content="공개 소개 페이지 아카이브.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080b12;
+      --panel: #111722;
+      --text: #edf3ff;
+      --muted: #9ba9bb;
+      --line: rgba(255, 255, 255, .12);
+      --accent: #8fc7ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 18% 12%, rgba(143, 199, 255, .22), transparent 28rem),
+        radial-gradient(circle at 86% 72%, rgba(255, 196, 137, .14), transparent 24rem),
+        var(--bg);
+      color: var(--text);
+      font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+      line-height: 1.6;
+      padding: 32px;
+    }
+
+    main {
+      width: min(720px, 100%);
+      border: 1px solid var(--line);
+      background: color-mix(in srgb, var(--panel) 82%, transparent);
+      border-radius: 10px;
+      padding: clamp(28px, 5vw, 52px);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .32);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 7vw, 56px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      padding: 18px 0;
+      color: var(--text);
+      text-decoration: none;
+      border-top: 1px solid var(--line);
+    }
+
+    a strong {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    a span {
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    a:hover strong {
+      color: var(--accent);
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#world">본문으로 이동</a>
-  <div class="scroll-progress" aria-hidden="true"><span></span></div>
-  <div class="intro-effect" role="presentation" aria-hidden="true">
-    <div class="intro-stars"></div>
-    <div class="intro-core">
-      <span class="intro-ring intro-ring-a"></span>
-      <span class="intro-ring intro-ring-b"></span>
-      <span class="intro-ring intro-ring-c"></span>
-      <span class="intro-light"></span>
-    </div>
-    <div class="intro-title">
-      <span>Academy Stern</span>
-      <strong>Orbital City Archive</strong>
-    </div>
-    <button class="intro-skip" type="button">Skip</button>
-  </div>
-  <header class="site-header">
-    <a class="brand" href="#top">Academy Stern</a>
-    <nav class="nav" aria-label="주요 섹션">
-      <a href="#world">세계관</a>
-      <a href="#academy">아카데미</a>
-      <a href="#institutions">기관</a>
-      <a href="#resonance">공명</a>
-      <a href="#system">경보와 출격</a>
-      <a href="#sternkern">슈테른케른</a>
-      <a href="#life">학사와 생활</a>
-      <a href="#threat">외계침략체</a>
-      <a href="#characters">인물</a>
-      <a href="#glossary">용어</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-media" aria-hidden="true"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Orbital City Archive</p>
-        <h1>아카데미 슈테른</h1>
-        <p class="hero-copy">
-          평범한 수업과 동아리 활동, 그리고 언제 울릴지 모르는 출격 경보.
-          아카데미 슈테른은 궤도 도시를 지키는 전시 교육기관입니다.
-          이곳의 학생들은 눈부신 청춘을 누리는 동시에, 자신의 '공명 적성'을 평가받으며 다가올 외계의 위협에 맞설 출격 후보로 길러집니다.
-        </p>
-        <div class="hero-actions" aria-label="빠른 이동">
-          <a href="#world">세계관 보기</a>
-          <a href="#characters">인물 아카이브</a>
-        </div>
-      </div>
-      <aside class="hero-panel" aria-label="핵심 정보">
-        <div>
-          <span>장르</span>
-          <strong>전시 학원, 궤도 도시 SF</strong>
-        </div>
-        <div>
-          <span>무대</span>
-          <strong>궤도 도시, 슈테른</strong>
-        </div>
-        <div>
-          <span>핵심</span>
-          <strong>청춘, 구속, 페어 공명</strong>
-        </div>
-      </aside>
-    </section>
-
-    <section id="world" class="section">
-      <div class="section-head">
-        <p class="eyebrow">01. World</p>
-        <h2>궤도 도시와 슈테른</h2>
-        <p>
-          칠흑 같은 우주에 떠 있는 거대한 방주, 궤도 도시.
-          그 중심부를 감싸는 비교적 평화로운 행정·교육 구역부터 외계 위협과 직접 맞닿은 서늘한 방벽권까지,
-          도시는 여러 겹의 궤도로 철저히 나뉘어 있습니다.
-          슈테른은 이 위태로운 요새 속에서 내일을 지켜내기 위해 세워진 특수 아카데미입니다.
-        </p>
-      </div>
-
-      <figure class="section-visual">
-        <img src="assets/orbital-city.png" alt="여러 겹의 궤도 도시와 중심 코어를 묘사한 일러스트">
-        <figcaption>동력부를 중심으로 여러 구역이 나뉜 궤도 도시. 안쪽은 행정과 교육, 바깥쪽은 산업 시설과 방벽권이다.</figcaption>
-      </figure>
-
-      <div class="image-band">
-        <article style="--bg:url('uploadSet/BG/1D.png')">
-          <h3>정문 광장</h3>
-          <p>아카데미의 얼굴이 되는 구역. 입학생, 교관, 행정 차량이 지나가는 곳이다. 슈테른의 질서와 분위기를 보여주는 대표 구역이다.</p>
-        </article>
-        <article style="--bg:url('uploadSet/BG/8D.png')">
-          <h3>학생 생활권</h3>
-          <p>강의실, 기숙사, 식당, 동아리방이 모인 구역. 학생들이 가장 오래 머무는 생활 공간이다. 경보가 울리면 가장 먼저 통제된다.</p>
-        </article>
-        <article style="--bg:url('uploadSet/BG/18N.png')">
-          <h3>방벽 구역</h3>
-          <p>도시 바깥과 가장 가까운 구역. 감시망과 출격 설비가 모여 있다. 외계 위협이 확인되면 출격 준비가 이곳에서 시작된다.</p>
-        </article>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card">
-          <h3>여러 겹의 궤도 도시</h3>
-          <p>
-            도시는 여러 궤도로 나뉜다. 안쪽에는 행정 구역과 아카데미 구역이 있다.
-            바깥쪽에는 시민 생활 구역, 산업 구역, 방벽 구역이 이어진다.
-          </p>
-        </article>
-        <article class="feature-card">
-          <h3>이동과 통제</h3>
-          <p>
-            같은 궤도 안에서는 순환선과 트램을 이용한다. 다른 궤도로 이동할 때는 환승항과 발사선,
-            포착 레일, 감속장, 도킹 장치를 거친다. 안쪽 구역일수록 신분 확인이 엄격하다.
-          </p>
-        </article>
-        <article class="feature-card">
-          <h3>방벽</h3>
-          <p>
-            방벽은 도시를 지키는 외곽 방어선이다. 감시, 격리, 출격, 잔해 처리의 기준이 된다.
-            균열이 발견되면 대피 명령과 출격 선발이 먼저 진행된다.
-          </p>
-        </article>
-      </div>
-
-      <div class="orbit-grid">
-        <article><span>중심부</span><h3>다이슨 스피어 코어</h3><p>도시의 동력과 생명 유지, 방벽 안정에 관여하는 중심 구조. 직접 접근은 엄격히 제한된다.</p></article>
-        <article><span>1궤도</span><h3>정부청사권</h3><p>행정, 방위 지휘, 특례 심사, 코어 접근 통제를 맡는 구역. 주요 명령과 문서가 이곳에서 나온다.</p></article>
-        <article><span>2궤도</span><h3>아카데미권</h3><p>슈테른, 메종 뤼미에르, 아카데미아 솔라리스가 있는 교육 구역. 적성자 선발, 연구, 훈련이 진행된다.</p></article>
-        <article><span>3궤도</span><h3>시민생활구역</h3><p>주거지, 상점, 병원, 일반 학교가 있는 생활권. 학생들의 가족과 과거가 남아 있는 구역이다.</p></article>
-        <article><span>4궤도</span><h3>산업구역</h3><p>식량 생산, 공장, 정비, 에너지 변환, 재순환 시설이 모인 구역. 도시의 일상 유지에 필요한 노동이 모인다.</p></article>
-        <article><span>5궤도</span><h3>방벽권</h3><p>외곽 방벽, 감시망, 요격 시설, 출격 게이트가 있는 구역. 외계 위협과 가장 먼저 맞닿는다.</p></article>
-      </div>
-    </section>
-
-    <section id="academy" class="section split-section">
-      <div class="section-head">
-        <p class="eyebrow">02. Academy</p>
-        <h2>학교이자 관리기관</h2>
-        <p>
-          아카데미 슈테른은 소년소녀들을 품은 울타리인 동시에, 이들을 전장으로 내보내는 전시 관리기관입니다.
-          왁자지껄한 동아리 활동과 설레는 축제 속에서도, 언제 울릴지 모르는 경보 방송 하나면 모든 일상이 멈춥니다.
-          학생들은 이곳에서 우정을 나누며 지식을 쌓아가는 한편, 자신의 '공명 적성'과 '출격 가치'를 냉혹하게 평가받습니다.
-        </p>
-      </div>
-      <div class="wide-card">
-        <div>
-          <h3>입학 절차</h3>
-          <p>
-            강당 집합, 개회 방송, 슈테른 시스템 안내, 금색 회중시계 배부가 진행된다.
-            이후 기숙사와 첫 시간표를 받는다. 생활 규칙과 단말 사용 제한도 이때 안내된다.
-          </p>
-        </div>
-        <div>
-          <h3>아카데미의 기준</h3>
-          <p>
-            성적만 보는 곳이 아니다. 공명 안정성, 적성, 부상 상태, 이전 출격 기록을 함께 본다.
-            가족의 거주권과 과거 기록도 심사 자료에 포함될 수 있다.
-          </p>
-        </div>
-      </div>
-
-      <div class="facility-grid">
-        <article><h3>본청</h3><p>행정 명령, 징계, 승인, 보고가 모이는 건물. 학생 관련 처분과 기록이 이곳에서 정리된다.</p></article>
-        <article><h3>교실동</h3><p>일반 수업과 전공 안내, 기초 평가가 이루어지는 건물. 경보가 내려오면 수업이 중단된다.</p></article>
-        <article><h3>전공동</h3><p>법학, 행정, 문학, 사회과학, 군사, 농업, 공학, 의학, 예술, 이학 실습이 이루어지는 건물이다.</p></article>
-        <article><h3>기숙사</h3><p>후보생은 주로 4인실을 사용한다. 정식 페어가 된 학생은 개인실이나 커플실을 배정받을 수 있다.</p></article>
-        <article><h3>공명평가동</h3><p>적성, 공명률, 감각 공유 내성, 출력 안정도를 측정하는 구역. 페어 배정과 출격 심사에 쓰인다.</p></article>
-        <article><h3>출격레일</h3><p>학생이 방벽권으로 이동할 때 쓰는 전용 시설. 일반 이동 시설이 아니라 출격용 동선이다.</p></article>
-      </div>
-    </section>
-
-    <section id="institutions" class="section">
-      <div class="section-head">
-        <p class="eyebrow">03. Institutions</p>
-        <h2>슈테른을 둘러싼 기관</h2>
-        <p>
-          학생들의 운명은 슈테른 안에서만 결정되지 않습니다.
-          궤도 이동 권한을 쥔 최상위 정부, 피비린내 나는 전장을 통제하는 방벽군,
-          그리고 권리와 예외를 저울질하는 특례심사국까지.
-          거주권과 생사를 쥐고 흔드는 톱니바퀴 같은 기관들이 학생들의 일상과 출격의 무게를 빈틈없이 옭아매고 있습니다.
-        </p>
-      </div>
-      <div class="institution-grid">
-        <article><h3>슈테른</h3><p>적성자 선발, 공명 평가, 교육, 페어 배정을 맡는 전시 아카데미. 금색 회중시계는 학생의 증표다.</p></article>
-        <article><h3>메종 뤼미에르</h3><p>예법과 사교 교육으로 알려진 여학원. 가문 인맥과 공식 행사에서 슈테른과 접점이 생긴다.</p></article>
-        <article><h3>아카데미아 솔라리스</h3><p>연구 중심 아카데미. 공명, 장치, 평가 자료를 분석한다. 연구 시연과 기술 지원을 맡는다.</p></article>
-        <article><h3>정부</h3><p>행정, 방위, 코어 통제를 맡는 최상위 기관. 궤도 이동 권한, 가족 거주권, 정책 특례에 관여한다.</p></article>
-        <article><h3>특례심사국</h3><p>전공점 사용, 졸업권, 정책 특례, 궤도 이동을 심사하는 기관. 모든 요청은 서류와 번호로 처리된다.</p></article>
-        <article><h3>방벽군</h3><p>방벽과 외곽 전장을 지키는 군 조직. 학생 페어가 출격할 때 후송로, 방위선, 요격 시설을 지원한다.</p></article>
-      </div>
-    </section>
-
-    <section id="resonance" class="section resonance-section">
-      <div class="section-head">
-        <p class="eyebrow">04. Resonance</p>
-        <h2>공명</h2>
-        <p>
-          '공명'은 두 사람의 영혼과 감각을 잇는 보이지 않는 끈이자,
-          아카데미가 출격 페어를 선발하는 가장 절대적인 척도입니다.
-          이는 단순한 호감이나 전투력을 넘어, 서로의 감각을 견뎌내는 내성과 출력의 안정을 요구합니다.
-          맹목적인 신뢰는 강한 무기가 되지만, 때로는 서로를 갉아먹는 치명적인 '과공명'의 늪으로 이끌기도 합니다.
-        </p>
-      </div>
-
-      <figure class="section-visual">
-        <img src="assets/resonance-pair.png" alt="슈테른트레거와 반휘터가 공명으로 연결되는 장면의 일러스트">
-        <figcaption>반휘터가 슈테른케른과 이어지면 코어 출력이 전장으로 전달된다. 그 출력은 슈테른트레거의 무장과 방어 형태가 된다.</figcaption>
-      </figure>
-
-      <div class="pair-grid">
-        <article><h3>슈테른트레거</h3><p>전장에 직접 나서는 역할. 공격, 방어, 돌파, 결정타를 맡는다. 반휘터의 보조가 안정되어야 제 기능을 낸다.</p></article>
-        <article><h3>반휘터</h3><p>머리 크기의 슈테른케른과 공명하는 역할. 코어 출력을 전장으로 연결한다. 가동 중에는 눈을 감고 장치에 집중한다.</p></article>
-        <article><h3>도플슈테른</h3><p>슈테른트레거와 반휘터가 1대1로 묶인 출격 페어. 공명률과 역할 적성이 맞으면 가매칭을 거쳐 정식 페어가 된다.</p></article>
-      </div>
-
-      <div class="resonance-scale">
-        <article><span>0-30</span><h3>불안정</h3><p>무장 형성과 방어 보조가 불안정하다. 명령 전달도 자주 어긋난다.</p></article>
-        <article><span>31-60</span><h3>기본 작동</h3><p>기본적인 작동은 가능하다. 실패와 지연이 많아 훈련과 재검사가 필요하다.</p></article>
-        <article><span>61-90</span><h3>안정권</h3><p>대부분의 작동이 안정된다. 이 단계부터 출격 후보로 검토된다.</p></article>
-        <article><span>91-100</span><h3>고공명</h3><p>출력과 반응 속도가 높다. 대신 감각 공유와 의존 문제가 강해진다.</p></article>
-        <article><span>100 초과</span><h3>과공명</h3><p>안정 범위를 넘은 상태. 감각 혼선, 통증 공유, 기억 역류, 폭주 위험이 생긴다.</p></article>
-      </div>
-
-      <div class="wide-card resonance-note">
-        <div>
-          <h3>관계와 수치의 경계</h3>
-          <p>
-            공명률은 단순한 호감도 표가 아니다. 신뢰, 이해, 의존, 집착이 모두 영향을 준다.
-            안정적인 신뢰는 힘이 되지만, 지나친 의존은 과공명으로 이어진다.
-          </p>
-        </div>
-        <div>
-          <h3>일반 생활과 출격 조건</h3>
-          <p>
-            공명이 낮은 학생은 일반 생활과 기초 과정에 머문다. 출격에는 안정적인 공명이 필요하다.
-            기준에 닿지 못한 조합은 관찰 유예, 재검사, 일반 졸업 과정으로 나뉜다.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="system" class="section">
-      <div class="section-head">
-        <p class="eyebrow">05. Alert & Sortie</p>
-        <h2>경보와 출격</h2>
-        <p>
-          외계의 위협이 관측되는 순간, 단말기에 떨어지는 붉은 경보가 평화로운 교정에 정적을 부릅니다.
-          수업은 즉각 중단되고 생사를 넘나들 '출격 후보' 명단이 갱신됩니다.
-          전장으로 향하기 전 주어지는 며칠간의 짧은 휴가.
-          그것은 달콤한 보상이 아니라, 어쩌면 마지막이 될지도 모를 서늘한 작별의 시간입니다.
-        </p>
-      </div>
-
-      <div class="timeline">
-        <article>
-          <span>경보 일주일 전</span>
-          <h3>외계 경보</h3>
-          <p>
-            관제실 예보가 전교 방송과 단말 공지로 내려온다.
-            이 신호는 전투 개시가 아니라 출격 준비 시작을 뜻한다.
-            수업은 멈추고 후보 호출이 이어진다.
-          </p>
-        </article>
-        <article>
-          <span>선발과 재검사</span>
-          <h3>출격 후보</h3>
-          <p>
-            후보는 공명 안정성, 적성, 부상 상태, 이전 출격 기록, 특별 신청 여부로 다시 확인된다.
-            명단은 게시판과 단말, 교관 호출로 전달된다.
-            최종 조합은 마지막에 바뀔 수 있다.
-          </p>
-        </article>
-        <article>
-          <span>출격 전</span>
-          <h3>마지막 휴가</h3>
-          <p>
-            출격 예정자는 며칠 동안 휴가를 받는다.
-            보상보다는 마지막 정리와 휴식에 가까운 시간이다.
-            이 기간에 가족 연락, 의료 점검, 개인 정리가 이루어진다.
-          </p>
-        </article>
-        <article>
-          <span>생환 이후</span>
-          <h3>전공점과 특별 신청</h3>
-          <p>
-            생환한 학생은 전공점을 받는다.
-            전공점은 휴가, 의료 우선권, 거주권 보호, 시민권 회복, 기록 정리 신청에 쓰인다.
-            큰 신청일수록 더 많은 점수와 심사가 필요하다.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="sternkern" class="section sternkern-section">
-      <div class="section-head">
-        <p class="eyebrow">06. Sternkern</p>
-        <h2>슈테른케른</h2>
-        <p>
-          반휘터가 자신의 의식을 연결해 막대한 코어의 에너지를 이끌어내는 심장부, 슈테른케른.
-          아카데미가 철저히 통제하는 이 조그만 중계 장치는 전장의 슈테른트레거에게 강대한 무장과 방패를 부여합니다.
-          하지만 가동 중 무방비 상태가 되는 반휘터에게는, 한순간의 집중력 흐트러짐이 끔찍한 공명 역류로 돌아오는 양날의 검이기도 합니다.
-        </p>
-      </div>
-      <figure class="section-visual">
-        <img src="assets/sternkern-device.png" alt="머리 크기의 슈테른케른 중계 장치를 묘사한 일러스트">
-        <figcaption>슈테른케른은 거대한 동력원이 아니다. 반휘터가 공명해 코어 출력을 넘기는 소형 중계 장치다.</figcaption>
-      </figure>
-      <div class="kern-layout">
-        <article class="kern-main">
-          <h3>코어 출력의 중계점</h3>
-          <p>
-            슈테른케른은 코어 출력을 그대로 쓰지 않는다.
-            반휘터의 공명을 거쳐 출력을 안정시키고, 방벽권 공명장으로 보낸다.
-            전달된 출력은 슈테른트레거의 전투 의장, 무기, 방어막, 보조 장치로 변환된다.
-          </p>
-          <p>
-            슈테른케른은 개인 장비가 아니다.
-            슈테른이 관리하는 장치이며, 정해진 절차 없이는 사용할 수 없다.
-            손상될 경우 공명 역류가 발생하고 공명률이 급격히 오른다.
-          </p>
-        </article>
-        <div class="kern-points">
-          <article><h3>가동 조건</h3><p>반휘터가 장치와 공명해야 한다. 출격에는 페어 공명률 70% 이상이 필요하다.</p></article>
-          <article><h3>가동 중 위험</h3><p>반휘터는 눈을 감고 장치에 집중한다. 이때 신체적으로 무방비 상태가 된다.</p></article>
-          <article><h3>감각과 사고</h3><p>반휘터는 슈테른트레거의 시각, 후각, 청각을 공유한다. 공명률 70% 이상부터는 의도적 사고 공유도 가능하다.</p></article>
-          <article><h3>해제와 역류</h3><p>집중이 풀리면 공명은 해제된다. 장치 손상은 공명 역류와 공명률 폭증으로 이어진다.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="life" class="section">
-      <div class="section-head">
-        <p class="eyebrow">07. Life</p>
-        <h2>학사와 일상</h2>
-        <p>
-          치열한 훈련과 무거운 책무 속에서도 학생들의 일상은 흘러갑니다.
-          중간고사와 기말고사, 시끌벅적한 동아리 준비와 반짝이는 축제의 밤.
-          하지만 이 모든 찬란한 순간들은 언제 떨어질지 모르는 외계 경보 아래 아슬아슬하게 유지되는 '허락된 평화'에 불과합니다.
-        </p>
-      </div>
-      <div class="calendar-grid">
-        <article>
-          <h3>학기</h3>
-          <p>연 2학기제다. 1학기는 3월부터 6월까지, 2학기는 9월부터 12월까지다.</p>
-        </article>
-        <article>
-          <h3>수업과 시험</h3>
-          <p>정규 수업, 과제, 기초 훈련, 평가가 진행된다. 8주차에는 중간고사, 15주차에는 기말고사가 있다.</p>
-        </article>
-        <article>
-          <h3>동아리</h3>
-          <p>학생회가 등록, 예산, 공간 배정을 맡는다. 전투 보조, 공학 제작, 문예, 음악, 공연, 원예, 신문 동아리가 있다.</p>
-        </article>
-        <article>
-          <h3>행사</h3>
-          <p>슈테른제, 기숙사 교류회, 동아리 공연회, 생환축하회, 추모등화제가 있다.</p>
-        </article>
-        <article>
-          <h3>평일</h3>
-          <p>오전과 오후에는 수업이 있다. 저녁과 밤에는 자습, 동아리, 상담, 보충 훈련이 이어진다.</p>
-        </article>
-        <article>
-          <h3>주말과 방학</h3>
-          <p>주말은 점호를 제외하면 비교적 자유롭다. 방학에는 귀가, 외박, 특별 휴가, 보충 훈련, 재평가가 있다.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="threat" class="section threat-section">
-      <div class="section-head">
-        <p class="eyebrow">08. Threat</p>
-        <h2>외계침략체</h2>
-        <p>
-          우주 너머에서 몰려오는 정체불명의 위협.
-          이들은 언어도, 지휘 체계도, 심지어 뚜렷한 악의조차 없는 기괴한 재앙입니다.
-          그저 코어의 에너지와 슈테른케른이 뿜어내는 공명파를 향해 맹렬히 쇄도할 뿐입니다.
-          이 차갑고 텅 빈 적들을 막아내기 위해, 오늘도 학생들은 파편이 흩날리는 전장으로 몸을 던집니다.
-        </p>
-      </div>
-
-      <figure class="section-visual">
-        <img src="assets/alien-invader.png" alt="방벽권 전장에 나타난 외계침략체를 묘사한 일러스트">
-        <figcaption>외계침략체는 코어 출력과 공명파에 반응하며 방벽권으로 쇄도한다.</figcaption>
-      </figure>
-
-      <div class="threat-grid">
-        <article>
-          <h3>감각</h3>
-          <p>열, 전자기, 공명파, 방벽 균열, 생체 전류에 반응한다. 규칙적인 진동에도 민감하다.</p>
-        </article>
-        <article>
-          <h3>구조</h3>
-          <p>규소질 갑피, 젤섬유, 공명 간섭 기관을 지닌다. 핵심낭을 파괴해야 확실하게 제압된다.</p>
-        </article>
-        <article>
-          <h3>형태</h3>
-          <p>압각, 침투, 군집, 공명 기생, 굴착형이 있다. 방벽군이 기록을 위해 붙인 임시 분류다.</p>
-        </article>
-        <article>
-          <h3>잔해</h3>
-          <p>도시 안에서는 오래 버티지 못한다. 잔류 흔적은 악몽, 감각 역류, 공명 잡음을 일으킨다. 전투 후 격리와 인계가 필요하다.</p>
-        </article>
-        <article>
-          <h3>전장</h3>
-          <p>관성 파편, 폐방벽재, 유리화 먼지, 얼어붙은 냉각수가 남는 환경이다. 거리감과 통신 상태가 자주 흔들린다.</p>
-        </article>
-        <article>
-          <h3>처리</h3>
-          <p>전투 뒤 잔해는 24시간 격리한다. 72시간 뒤 방벽군에 인계한다. 민간 반입과 재가공은 금지다.</p>
-        </article>
-        <article>
-          <h3>금기</h3>
-          <p>핵심낭 확인 전에는 승리 판정을 내리지 않는다. 단독 추격도 금지다.</p>
-        </article>
-        <article>
-          <h3>전술</h3>
-          <p>방위조는 후송로와 방벽선을 맡는다. 주공조는 핵심 섬멸을 맡는다. 두 조가 나뉘어 움직인다.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="characters" class="section">
-      <div class="section-head">
-        <p class="eyebrow">09. People</p>
-        <h2>인물 아카이브</h2>
-        <p>
-          궤도 도시와 아카데미의 톱니바퀴를 굴리는 자들, 그리고 그 체계 속에 놓인 이들의 기록입니다.
-          각자가 품은 비밀과 갈등, 외면할 수 없는 상처와 저마다의 신념이
-          이 차가운 궤도 위 세계관에 뜨거운 숨결을 불어넣습니다.
-        </p>
-      </div>
-
-      <div class="character-tools" aria-label="인물 분류">
-        <button type="button" class="is-active" data-character-filter="all" aria-pressed="true">전체</button>
-        <button type="button" data-character-filter="student" aria-pressed="false">학생</button>
-        <button type="button" data-character-filter="staff" aria-pressed="false">교직원·관계자</button>
-      </div>
-
-      <h3 class="group-title" data-character-heading="student">학생</h3>
-      <div class="character-grid" data-character-group="student">
-        <article class="character-card">
-          <img src="uploadSet/S01.png" alt="윤세라" loading="lazy">
-          <div><h4>윤세라</h4><p class="role">학생회장 · 법학 전공 · 징계 재심 담당</p><p>슈테른의 질서를 수호하는 학생회장. 흠잡을 데 없는 제복 아래, 차가운 규칙으로부터 학생들을 지켜내겠다는 무거운 책임을 홀로 삼키고 있습니다.</p><dl class="profile-facts"><dt>외형</dt><dd>검은 장발, 푸른 눈, 흰 장갑, 은색 배지</dd><dt>속마음</dt><dd>절차라는 방패로 아이들의 내일을 지켜내려는 절박한 보호 본능</dd><dt>갈등</dt><dd>지워진 출격 명단, 반려된 탄원서, 그리고 본청의 서늘한 압박</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S02.png" alt="강유현" loading="lazy">
-          <div><h4>강유현</h4><p class="role">학생회 부회장 · 행정 예산 담당</p><p>예산 장부를 쥐고 아카데미의 살림을 책임지는 중재자. 섣부른 선의가 결국 목을 조르는 빚으로 돌아오는 궤도 도시의 생리를 누구보다 잘 압니다.</p><dl class="profile-facts"><dt>외형</dt><dd>갈색 머리, 금색 눈, 느슨한 넥타이, 예산 장부</dd><dt>속마음</dt><dd>무책임한 온정 대신, 냉정하지만 확실한 생존을 셈하려는 현실 감각</dd><dt>갈등</dt><dd>물자 부족, 가문의 보증, 청구서 뒤에 가려진 누군가의 목숨값</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S03.png" alt="이나경" loading="lazy">
-          <div><h4>이나경</h4><p class="role">학생회 서기 · 기록실 회의록 담당</p><p>묵묵히 활자를 새기는 기록실의 서기. 삭제된 회의록과 사라진 이름들 사이에서, 왜곡되지 않은 온전한 진실을 남기기 위해 단말기를 놓지 않습니다.</p><dl class="profile-facts"><dt>외형</dt><dd>검은 단발, 회색 눈, 안경, 기록 단말</dd><dt>속마음</dt><dd>지워진 자들의 흔적을 어떻게든 붙잡아 두려는 활자에 대한 집착</dd><dt>갈등</dt><dd>폐쇄 서고의 비밀, 은폐된 기록, 아슬아슬한 백업 파일</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S04.png" alt="백하린" loading="lazy">
-          <div><h4>백하린</h4><p class="role">사회과학 전공 · 방벽권 피난 기록 조사</p><p>방벽권 피난의 상흔을 안고 있는 학생. 목 끝까지 잠근 외투처럼 타인과의 거리를 두며, 낙관적인 안전 방송을 결코 믿지 않습니다.</p><dl class="profile-facts"><dt>외형</dt><dd>은색 단발, 푸른 눈, 목잠근 외투, 지도 케이스</dd><dt>속마음</dt><dd>누구에게도 기대지 않고 스스로 살아남아야 한다는 서늘한 생존 본능</dd><dt>갈등</dt><dd>지연되었던 대피 열차, 무너진 거주지, 아직도 끊겨 있는 무전</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S05.png" alt="도재윤" loading="lazy">
-          <div><h4>도재윤</h4><p class="role">군사 전공 · 체육 훈련 특기생</p><p>승부와 성과로 자신의 가치를 증명하려는 군사 전공 학생. 땀에 젖은 훈련복과 감싸 쥔 손목은 살아남기 위해 발둥친 치열한 흔적입니다.</p><dl class="profile-facts"><dt>외형</dt><dd>짧은 검은 머리, 검은 눈, 훈련복, 감싼 손목</dd><dt>속마음</dt><dd>한 번의 패배가 곧 죽음일지도 모른다는 불안이 빚어낸 지독한 승부욕</dd><dt>갈등</dt><dd>오지 않았던 구조대, 몸을 혹사시키는 야간 훈련, 한계에 달한 경고 누적</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S06.png" alt="한미루" loading="lazy">
-          <div><h4>한미루</h4><p class="role">농업 전공 · 공동식당과 식량 재배 담당</p><p>언제 무너질지 모르는 궤도 도시에서 꿋꿋하게 식물과 일상을 돌보는 농업 전공 학생. 화분 하나, 식사 한 끼의 온기가 가진 힘을 믿습니다.</p><dl class="profile-facts"><dt>외형</dt><dd>갈색 단발, 녹색 눈, 머리핀, 앞치마 복식</dd><dt>속마음</dt><dd>잿빛 전장 속에서도 결코 평범한 일상을 포기하지 않으려는 다정한 고집</dd><dt>갈등</dt><dd>만성적인 식량난, 공동식당의 텅 빈 배식구, 금지된 씨앗 반출</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S07.png" alt="서지오" loading="lazy">
-          <div><h4>서지오</h4><p class="role">공학 전공 · 정비와 폐기장 부품 담당</p><p>기름 묻은 손으로 망가진 것들을 고쳐내는 공학 전공 학생. 쓸모를 다해 버려지는 것들에 대한 묘한 연민으로, 고장의 원인을 끝까지 파헤칩니다.</p><dl class="profile-facts"><dt>외형</dt><dd>흐트러진 회색 머리, 녹색 눈, 공구 조끼, 기름 묻은 손</dd><dt>속마음</dt><dd>망가진 부품도, 부서진 사람도 쉽게 포기하지 못하는 집요함</dd><dt>갈등</dt><dd>폐기장 뒷골목의 아르바이트, 미신고 부품, 우연히 주운 구조 신호</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S08.png" alt="류아현" loading="lazy">
-          <div><h4>류아현</h4><p class="role">의학 전공 · 응급 분류 실습생</p><p>누구를 살릴지 정해야 하는 응급 분류의 십자가를 진 의학 전공 학생. 핏자국 묻은 흰 손수건처럼 지울 수 없는 죄책감을 안고 있습니다.</p><dl class="profile-facts"><dt>외형</dt><dd>검은 묶음머리, 갈색 눈, 의료 코트, 흰 손수건</dd><dt>속마음</dt><dd>누군가의 생사를 저울질해야 했던 고통, 그럼에도 흔들리지 않으려는 단호함</dd><dt>갈등</dt><dd>처참한 응급 분류표, 병동의 비명, 끝내 살리지 못한 환자 명단</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S09.png" alt="차민결" loading="lazy">
-          <div><h4>차민결</h4><p class="role">문학 전공 · 학내 신문과 제보 담당</p><p>가벼운 농담 속에 날카로운 진실을 숨겨 나르는 문학 전공 학생. 모두가 쉬쉬하는 아카데미의 뒷이야기를 쫓으며 제보자의 그림자를 덮어줍니다.</p><dl class="profile-facts"><dt>외형</dt><dd>금갈색 머리, 푸른 눈, 캐주얼 재킷, 소문 노트</dd><dt>속마음</dt><dd>숨 막히는 현실을 비틀어 웃어넘기려는 냉소 섞인 문학적 저항</dd><dt>갈등</dt><dd>소문이 부른 부당 징계, 출처를 묻는 추궁, 굳게 잠긴 제보함</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S10.png" alt="오시현" loading="lazy">
-          <div><h4>오시현</h4><p class="role">법학 전공 · 학생 변론과 징계 대응</p><p>부당한 권위와 징계에 맞서 방패를 자처하는 법학 전공 학생. 빈틈없는 복식만큼이나 꺾이지 않는 신념으로 학생들의 권리를 변론합니다.</p><dl class="profile-facts"><dt>외형</dt><dd>검은 장발, 붉은 갈색 눈, 각진 정장풍 복식, 문서함</dd><dt>속마음</dt><dd>불합리한 세계에 결코 순응하지 않으려는 날 선 정의감과 갈망</dd><dt>갈등</dt><dd>번번이 기각되는 탄원, 권력의 위헌적 지시, 어둠 속에 묻힌 판례</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S11.png" alt="마리엘 권" loading="lazy">
-          <div><h4>마리엘 권</h4><p class="role">예술 전공 · 공연 무대 실연 담당</p><p>무대 위의 조명이 꺼진 뒤에도 완벽을 연기해야 하는 예술 전공 학생. 화려한 복식 뒤에는 누군가의 대역이라는 쓰라린 꼬리표가 숨어 있습니다.</p><dl class="profile-facts"><dt>외형</dt><dd>붉은 장발, 금색 눈, 리본, 무대 복식</dd><dt>속마음</dt><dd>누구의 대체품도 아닌, 온전한 자신으로서 인정받고 싶은 지독한 갈증</dd><dt>갈등</dt><dd>가문의 무거운 이름, 그림자 같은 대역 생활, 찢겨진 초대장</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S12.png" alt="진태오" loading="lazy">
-          <div><h4>진태오</h4><p class="role">공학 전공 · 산업구역 정비 출신</p><p>산업구역의 찌든 매연을 안고 올라온 공학 전공 학생. 화상 입은 거친 손은 생계와 가족을 짊어진 그가 견뎌내야 했던 궤도 도시의 밑바닥을 보여줍니다.</p><dl class="profile-facts"><dt>외형</dt><dd>짧은 검은 머리, 갈색 눈, 작업복, 작업 장갑</dd><dt>속마음</dt><dd>버려지는 것에 대한 뼈저린 공포와 어떻게든 책임지려는 처절한 현실감각</dd><dt>갈등</dt><dd>낫지 않는 폐열 화상, 짓누르는 생계 채무, 정지된 작업 허가</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S13.png" alt="노유진" loading="lazy">
-          <div><h4>노유진</h4><p class="role">사회과학 전공 · 상담 기록 보조</p><p>타인의 찢겨진 마음을 마주하는 상담 기록 보조 학생. 들춰내고 싶지 않은 아픔은 기꺼이 묻어두는 것이 진정한 위로라 믿는 조용한 관찰자입니다.</p><dl class="profile-facts"><dt>외형</dt><dd>갈색 장발, 회색 눈, 분홍 끈, 니트 복식</dd><dt>속마음</dt><dd>억지로 말하지 않아도 될 권리마저 지켜주고 싶은 깊고 차분한 통찰</dd><dt>갈등</dt><dd>누군가 훔쳐본 상담 기록, 유출자의 그림자, 봉인된 마음의 카드</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/S14.png" alt="에른스트 하" loading="lazy">
-          <div><h4>에른스트 하</h4><p class="role">이학 전공 · 공명 데이터 분석 담당</p><p>인간의 감정과 공명마저 수치화하려는 이학 전공 학생. 변덕스러운 마음조차 계산 가능한 공식에 대입하면 상처받지 않을 거라 믿습니다.</p><dl class="profile-facts"><dt>외형</dt><dd>금발, 청회색 눈, 정돈된 제복, 패턴 노트</dd><dt>속마음</dt><dd>설명할 수 없는 감정의 파도를 통제 가능한 변수로 묶어두려는 서글픈 이성</dd><dt>갈등</dt><dd>어긋나버린 예측 모델, 실패한 공명, 몰래 지워버린 계산 노트</dd></dl></div>
-        </article>
-      </div>
-
-      <h3 class="group-title" data-character-heading="staff">교직원과 관계자</h3>
-      <div class="character-grid staff-grid" data-character-group="staff">
-        <article class="character-card">
-          <img src="uploadSet/T01.png" alt="민가온" loading="lazy">
-          <div><h4>민가온</h4><p class="role">전투 교관 · 학생 후퇴 규정 담당</p><p>전장에 나서는 학생들의 등을 떠미는 교관. 헛된 영광이나 꿈보다, 어떻게든 살아서 돌아오는 내일이 훨씬 값지다고 가르칩니다.</p><dl class="profile-facts"><dt>외형</dt><dd>짧은 검은 머리, 검은 눈, 흉터, 검은 교관복</dd><dt>속마음</dt><dd>제자들의 낭만을 꺾어서라도 숨을 붙어있게 만들려는 가혹한 보호 본능</dd><dt>갈등</dt><dd>늦어버린 후퇴 명령, 차가운 교관 감찰, 차마 부치지 못한 전사자의 편지</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/T02.png" alt="정서윤" loading="lazy">
-          <div><h4>정서윤</h4><p class="role">공명 평가 연구원 · 페어 분석 담당</p><p>얇은 장갑 너머로 공명률을 차갑게 분석하는 연구원. 요동치는 감정과 불규칙한 인간성을 완벽한 데이터로 통제하려 애씁니다.</p><dl class="profile-facts"><dt>외형</dt><dd>푸른 머리, 회색 눈, 흰 연구복, 얇은 장갑</dd><dt>속마음</dt><dd>예측 불가능한 상실의 변수를 지워버리고 싶은 서늘한 기계적 냉정함</dd><dt>갈등</dt><dd>끊임없는 페어 매칭 실패, 윤리 위원회의 감사, 어둠 속의 저조도 로그</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/T03.png" alt="권라희" loading="lazy">
-          <div><h4>권라희</h4><p class="role">의료동 담당 · 상담 비밀 보호</p><p>규칙보다 맥박을 먼저 살피는 의료동의 안식처. 본청의 서늘한 보고 지침 속에서도, 상처 입은 아이들의 쉴 곳을 지켜내기 위해 분투합니다.</p><dl class="profile-facts"><dt>외형</dt><dd>검은 묶음머리, 갈색 눈, 흰 가운, 종이책</dd><dt>속마음</dt><dd>행정적 의무보다 망가진 몸과 마음을 꿰매는 일이 먼저라는 다정한 굳건함</dd><dt>갈등</dt><dd>의도된 보고 지연, 본청의 진료 감사, 기록에 남지 않은 은밀한 치료</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/T04.png" alt="오르트 빈터" loading="lazy">
-          <div><h4>오르트 빈터</h4><p class="role">기술 관리관 · 슈테른케른 점검 담당</p><p>슈테른케른을 정비하는 고독한 기술자. 기계는 거짓말을 하지 않으나, 장치를 다루는 인간의 나약함은 언제든 참사를 부를 수 있다고 굳게 믿습니다.</p><dl class="profile-facts"><dt>외형</dt><dd>은발, 회색 눈, 낡은 검은 장갑, 기술자 코트</dd><dt>속마음</dt><dd>깊은 불신을 지독하게 철저한 사고 예방으로 덮어버리려는 엄격함</dd><dt>갈등</dt><dd>끔찍했던 케른 역류 사고의 기억, 깐깐한 접근 보증, 피가 묻은 점검표</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/E01.png" alt="서문기" loading="lazy">
-          <div><h4>서문기</h4><p class="role">특례심사국 사무관 · 신청 심사 담당</p><p>절망적인 탄원서조차 규격에 맞지 않으면 가차 없이 반려하는 특례심사국 사무관. 예외와 온정은 결국 시스템을 붕괴시킬 뿐이라고 믿습니다.</p><dl class="profile-facts"><dt>외형</dt><dd>회색 정장, 검은 머리, 회색 눈, 금속 안경</dd><dt>속마음</dt><dd>누군가의 희망과 절망조차 서류의 잉크로 치환해버리는 지독한 관료적 효율</dd><dt>갈등</dt><dd>파기된 감정적 호소, 기계적인 도장 감사, 산더미 같은 반려 파일</dd></dl></div>
-        </article>
-        <article class="character-card">
-          <img src="uploadSet/E02.png" alt="나디아 로웰" loading="lazy">
-          <div><h4>나디아 로웰</h4><p class="role">방벽군 장교 · 철수와 방위선 지휘</p><p>의수가 된 오른팔로 전장의 교훈을 증명하는 방벽군 장교. 낭만적인 영웅담 대신, 최소한의 희생으로 방위선을 유지하는 차가운 셈법을 따릅니다.</p><dl class="profile-facts"><dt>외형</dt><dd>짧은 금발, 푸른 눈, 짙은 군복, 오른팔 의수</dd><dt>속마음</dt><dd>명예나 승리보다 누군가는 살아 돌아가야 한다는 핏빛 현장의 감각</dd><dt>갈등</dt><dd>지옥 같았던 철수 지연, 검열당하는 군사 명령, 처참한 방벽 균열도</dd></dl></div>
-        </article>
-      </div>
-    </section>
-
-    <section id="glossary" class="section">
-      <div class="section-head">
-        <p class="eyebrow">10. Glossary</p>
-        <h2>세계관 용어집</h2>
-        <p>
-          아카데미 슈테른과 궤도 도시를 둘러싼 고유의 법칙과 명칭들입니다.
-          이 낯설고도 위태로운 세계의 질서를 이해하고,
-          인물들의 서사에 온전히 빠져들기 위한 길라잡이가 되어줄 것입니다.
-        </p>
-      </div>
-      <div class="glossary-list">
-        <article><h3>궤도 도시</h3><p>여러 궤도로 나뉜 하늘 위 도시. 행정, 교육, 생활, 산업, 방벽 구역으로 구성된다.</p></article>
-        <article><h3>슈테른케른</h3><p>반휘터가 공명하는 머리 크기의 코어 출력 중계 장치. 도시 코어 자체는 아니다.</p></article>
-        <article><h3>공명</h3><p>페어가 전장과 장치에 맞춰지는 현상. 출력 안정도와 감각 공유에 영향을 준다.</p></article>
-        <article><h3>슈테른트레거</h3><p>전장에 직접 나서는 역할. 반휘터가 전달한 출력을 무장과 방어 형태로 받아 쓴다.</p></article>
-        <article><h3>반휘터</h3><p>슈테른케른과 공명하는 역할. 코어 출력을 전장으로 넘기고 슈테른트레거를 보조한다.</p></article>
-        <article><h3>도플슈테른</h3><p>슈테른트레거와 반휘터가 1대1로 묶인 정식 출격 페어. 공명률과 안정성 검증이 필요하다.</p></article>
-        <article><h3>출격 경보</h3><p>외계 위협 도달 전 내려오는 준비 신호. 후보 선발과 재검사가 시작된다.</p></article>
-        <article><h3>전공점</h3><p>생환한 학생에게 주어지는 점수. 휴가, 의료, 생활권 보호, 특별 신청에 쓰인다.</p></article>
-        <article><h3>특별 신청</h3><p>전공점을 사용해 원하는 일을 요청하는 제도. 신청 내용에 따라 심사와 반려가 따른다.</p></article>
-        <article><h3>졸업권</h3><p>전투 과정에서 빠질 수 있는 권리. 적성자에게는 충분한 전공점과 심사가 필요하다.</p></article>
-        <article><h3>과공명</h3><p>공명이 안정권을 넘어선 상태. 감각 혼선, 통증 공유, 기억 역류가 발생할 수 있다.</p></article>
-        <article><h3>금색 회중시계</h3><p>슈테른 학생의 증표. 학생증이자 관리 체계의 표식이다.</p></article>
-        <article><h3>출격레일</h3><p>슈테른 학생이 방벽권 전장으로 나갈 때 쓰는 전용 시설. 일반 이동 시설과 구분된다.</p></article>
-        <article><h3>생환축하회</h3><p>출격에서 살아 돌아온 학생을 위해 열리는 비공식 축하 자리.</p></article>
-        <article><h3>추모등화제</h3><p>전사자와 실종자를 기리는 야간 행사. 촛불, 명단, 묵념이 중심이다.</p></article>
-        <article><h3>슈테른제</h3><p>학기마다 열리는 대형 축제. 부스, 공연, 전공 전시, 푸드트럭이 모인다.</p></article>
-        <article><h3>삼원교류회</h3><p>슈테른, 메종 뤼미에르, 아카데미아 솔라리스가 함께 여는 분기 교류 행사.</p></article>
-      </div>
-    </section>
-
-    <section class="closing">
-      <p>
-        아카데미 슈테른의 시계는 평범한 학사 일정과 잔혹한 전시 상황을 동시에 가리킵니다.
-        일상과 생존, 그리고 공명으로 얽힌 관계들.
-        본 아카이브는 이 위태롭고도 찬란한 궤도 도시 속, 세계의 톱니바퀴가 되어가는 주요 인물과 시스템을 조망하기 위한 기록입니다.
-      </p>
-      <div class="closing-links" aria-label="빠른 이동">
-        <a href="#top">처음으로</a>
-        <a href="#characters">인물 아카이브</a>
-        <a href="#glossary">용어집</a>
-      </div>
-    </section>
+  <main>
+    <h1>Open Intros</h1>
+    <p>공개용 소개 페이지를 모아두는 아카이브입니다.</p>
+    <a href="academy-stern/">
+      <strong>아카데미 슈테른</strong>
+      <span>열기</span>
+    </a>
   </main>
-  <button class="back-to-top" type="button" aria-label="처음으로 이동">↑</button>
 </body>
 </html>

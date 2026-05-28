@@ -1,40 +1,44 @@
 # Do not publish source/planning materials.
-자료/
+/자료/
 
-# Ignore every uploaded/generated asset by default, then allow only files used by the page.
-assets/*
-!assets/orbital-city.png
-!assets/resonance-pair.png
-!assets/sternkern-device.png
-!assets/alien-invader.png
+# Keep root-level source asset dumps out of GitHub Pages.
+/assets/
+/uploadSet/
 
-uploadSet/**
-!uploadSet/
-!uploadSet/BG/
-!uploadSet/BG/1D.png
-!uploadSet/BG/8D.png
-!uploadSet/BG/10N.png
-!uploadSet/BG/18N.png
-!uploadSet/S01.png
-!uploadSet/S02.png
-!uploadSet/S03.png
-!uploadSet/S04.png
-!uploadSet/S05.png
-!uploadSet/S06.png
-!uploadSet/S07.png
-!uploadSet/S08.png
-!uploadSet/S09.png
-!uploadSet/S10.png
-!uploadSet/S11.png
-!uploadSet/S12.png
-!uploadSet/S13.png
-!uploadSet/S14.png
-!uploadSet/T01.png
-!uploadSet/T02.png
-!uploadSet/T03.png
-!uploadSet/T04.png
-!uploadSet/E01.png
-!uploadSet/E02.png
+# Inside each published intro folder, ignore uploaded/generated assets by default.
+/academy-stern/assets/*
+!/academy-stern/assets/orbital-city.png
+!/academy-stern/assets/resonance-pair.png
+!/academy-stern/assets/sternkern-device.png
+!/academy-stern/assets/alien-invader.png
+
+/academy-stern/uploadSet/**
+!/academy-stern/uploadSet/
+!/academy-stern/uploadSet/BG/
+!/academy-stern/uploadSet/BG/1D.png
+!/academy-stern/uploadSet/BG/8D.png
+!/academy-stern/uploadSet/BG/10N.png
+!/academy-stern/uploadSet/BG/18N.png
+!/academy-stern/uploadSet/S01.png
+!/academy-stern/uploadSet/S02.png
+!/academy-stern/uploadSet/S03.png
+!/academy-stern/uploadSet/S04.png
+!/academy-stern/uploadSet/S05.png
+!/academy-stern/uploadSet/S06.png
+!/academy-stern/uploadSet/S07.png
+!/academy-stern/uploadSet/S08.png
+!/academy-stern/uploadSet/S09.png
+!/academy-stern/uploadSet/S10.png
+!/academy-stern/uploadSet/S11.png
+!/academy-stern/uploadSet/S12.png
+!/academy-stern/uploadSet/S13.png
+!/academy-stern/uploadSet/S14.png
+!/academy-stern/uploadSet/T01.png
+!/academy-stern/uploadSet/T02.png
+!/academy-stern/uploadSet/T03.png
+!/academy-stern/uploadSet/T04.png
+!/academy-stern/uploadSet/E01.png
+!/academy-stern/uploadSet/E02.png
 
 *.log
 *.tmp
