@@ -57,49 +57,28 @@
       font-size: 16px;
     }
 
-    .intro-card {
-      display: grid;
-      gap: 16px;
-      padding: 0 0 18px;
-      color: var(--text);
-      text-decoration: none;
-      border-top: 1px solid var(--line);
-      overflow: hidden;
-    }
-
-    .intro-card img {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-top: 20px;
-      border: 1px solid var(--line);
-      transition: transform .24s ease, filter .24s ease;
-    }
-
-    .intro-card:hover img {
-      transform: scale(1.015);
-      filter: brightness(1.1);
-    }
-
-    .intro-card-body {
+    a {
       display: flex;
       justify-content: space-between;
       gap: 18px;
       align-items: center;
+      padding: 18px 0;
+      color: var(--text);
+      text-decoration: none;
+      border-top: 1px solid var(--line);
     }
 
-    .intro-card strong {
+    a strong {
       font-size: 20px;
       font-weight: 700;
     }
 
-    .intro-card span {
+    a span {
       color: var(--accent);
       white-space: nowrap;
     }
 
-    .intro-card:hover strong {
+    a:hover strong {
       color: var(--accent);
     }
   </style>
@@ -108,12 +87,9 @@
   <main>
     <h1>Open Intros</h1>
     <p>공개용 소개 페이지를 모아두는 아카이브입니다.</p>
-    <a class="intro-card" href="academy-stern/" aria-label="아카데미 슈테른 소개 페이지 열기">
-      <img src="academy-stern/assets/academy-stern-card.png" alt="궤도 도시 아카데미 슈테른 배너">
-      <span class="intro-card-body">
-        <strong>아카데미 슈테른</strong>
-        <span>열기</span>
-      </span>
+    <a href="academy-stern/">
+      <strong>아카데미 슈테른</strong>
+      <span>열기</span>
     </a>
   </main>
 </body>
