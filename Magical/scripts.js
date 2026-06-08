@@ -307,12 +307,12 @@ let activeVillainFaction = 0;
 document.body.classList.add("is-loading");
 
 function imageFor(character, form) {
-  if (form === "normal") return `../컨셉/일상/${character.code}.png`;
-  return `../컨셉/마법소녀/${character.code}F.png`;
+  if (form === "normal") return `assets/profiles/normal/${character.code}.png`;
+  return `assets/profiles/magic/${character.code}F.png`;
 }
 
 function villainImage(code) {
-  return `../컨셉/빌런/${code}.png`;
+  return `assets/profiles/villains/${code}.png`;
 }
 
 function villainTeamup(faction) {
