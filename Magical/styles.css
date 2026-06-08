@@ -804,7 +804,7 @@ h1, h2, h3, p { margin-top: 0; }
   background-image:
     radial-gradient(circle at 72% 18%, rgba(255, 104, 202, 0.18), transparent 28rem),
     linear-gradient(90deg, rgba(9, 5, 20, 0.96), rgba(18, 8, 35, 0.66), rgba(9, 5, 20, 0.88)),
-    url("../Background/BG10_2.png");
+    url("assets/backgrounds/BG10_2.png");
   background-size: cover;
   background-position: center;
 }
@@ -1000,7 +1000,7 @@ h1, h2, h3, p { margin-top: 0; }
     radial-gradient(circle at 12% 16%, rgba(255, 64, 64, 0.2), transparent 27rem),
     radial-gradient(circle at 78% 24%, rgba(141, 134, 255, 0.18), transparent 30rem),
     linear-gradient(90deg, rgba(5, 3, 10, 0.98), rgba(20, 5, 18, 0.72), rgba(5, 3, 10, 0.9)),
-    url("../Background/BG18.png");
+    url("assets/backgrounds/BG18.png");
   background-size: cover;
   background-position: center;
   filter: saturate(0.92) contrast(1.08);
