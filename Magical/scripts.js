@@ -5,11 +5,11 @@ const teams = [
     name: "루나리움",
     tone: "오래된 왕가의 맹세를 잇는다. 파괴보다 민간인 보호와 전선 통제를 우선시하며, 상처가 번지기 전에 정화하고 조용히 닫아버리는 구원자들.",
     characters: [
-      { name: "진서우", alias: "크림슨레드", power: "절단", code: "F_A_A", mood: "냉철한 현장 지휘관. 책임을 온전히 짊어지며, '절단'을 폭력이 아닌 상황 통제와 퇴로 확보의 이성적 수단으로 운용한다." },
+      { name: "진서우", alias: "크림슨레드", power: "절단", code: "F_A_A", mood: "피해와 퇴로를 먼저 계산하고 자신의 결정에 책임을 지는 현장 지휘관. 절단의 힘을 지닌 실과 검을 만들거나 물체에 절단력을 부여하며, 주로 실을 써 전선을 분리한다." },
       { name: "김하린", alias: "코발트블루", power: "동결", code: "F_A_B", mood: "철저한 손실 통제자. 자원과 감정의 낭비를 막기 위해 '동결'을 방어적 거리 유지와 피해 억제 수단으로 쓴다." },
       { name: "정다인", alias: "제이드그린", power: "재생", code: "F_A_C", mood: "타인의 상처를 우선하는 헌신적 조율자. '재생'을 무력 제압이 아닌 전선 유지와 아군 구호의 든든한 기반으로 다룬다." },
       { name: "유채하", alias: "토파즈옐로", power: "정화", code: "F_A_D", mood: "절망 앞에서도 꺾이지 않는 낙관주의자. '정화'를 전장의 짙은 오염을 뚫고 사기를 진작시키는 치열한 의지로 운용한다." },
-      { name: "이지안", alias: "오닉스블랙", power: "흡인", code: "F_A_E", mood: "노련하고 현실적인 관찰자. '흡인'을 파괴가 아닌 불길한 징후와 숨겨진 위협을 예민하게 읽어들이는 정보 수집 수단으로 다룬다." },
+      { name: "이지안", alias: "오닉스블랙", power: "흡인", code: "F_A_E", mood: "선의와 욕망의 징후를 읽되 증거가 부족하면 관찰을 이어가는 노련한 맏언니. 흡입 흐름으로 대상·공격·파편을 빨아들여 위치를 바꾼다." },
     ],
   },
   {
@@ -22,18 +22,18 @@ const teams = [
       { name: "차설희", alias: "탤리아", power: "연출", code: "F_B_B", mood: "현실감이 결여된 극작가. '연출'을 직접적인 충돌 대신, 자신에게 가장 유리한 국면을 조작해 내는 기만과 방어 기제로 운용한다." },
       { name: "명주하", alias: "바스테트", power: "중력", code: "F_B_C", mood: "책임감의 무게에 흔들리는 몽상가. '중력'을 무거운 현실 대신 적을 물리적으로 짓눌러 강제로 전선을 여는 압승의 타격 수단으로 쓴다." },
       { name: "양로아", alias: "테티스", power: "수압", code: "F_B_D", mood: "규범을 거부하는 저돌적 일탈자. '수압'을 얽매인 틀을 단번에 터뜨리고 적에게 숨 쉴 틈을 주지 않는 강제 돌파 수단으로 다룬다." },
-      { name: "타카나기 미나미", alias: "아이리스", power: "프리즘", code: "F_B_E", mood: "자존감의 결핍을 앓는 가희. '프리즘'을 대중의 시선과 감정을 굴절시켜 전장의 공기를 지배하는 매혹과 통제 수단으로 운용한다." },
+      { name: "타카나기 미나미", alias: "아이리스", power: "프리즘", code: "F_B_E", mood: "연예계의 원로이자 무대의 가희. 매혹적인 태도로 상대의 반응을 시험하지만 자신의 감정에는 솔직하지 못하다. 프리즘으로 빛의 경로와 색을 굴절·분산해 보이는 모습과 장면을 조작한다." },
     ],
   },
   {
     key: "fellow",
     short: "펠로",
     name: "큐어펠로우십",
-    tone: "희망과 응원을 공명시키는 무대 위의 구원자들. 압도적인 팀워크를 무기로, 누군가를 맹목적으로 응원하는 마음을 즉각적인 마력으로 치환한다.",
+    tone: "희망과 응원으로 서로의 남은 마력을 연결하는 동료들. 목소리와 움직임을 맞춰 팀워크와 출력·효율을 높이며, 합체기와 회복·정화에도 각자의 마력을 쓴다.",
     characters: [
-      { name: "김미리", alias: "드림마젠타", power: "꿈", code: "F_C_A", mood: "타인의 긍정에 의존하는 팀의 중추. '꿈'을 환각이 아닌 전장에 희망적인 심상을 투사하여 아군의 행동을 동기화하는 방송 매체로 운용한다." },
-      { name: "야마하라 카나", alias: "드림민트", power: "자연", code: "F_C_B", mood: "찰나의 장면을 포착하는 감각적 기록자. '자연'을 덩굴 타격이 아닌 빛과 흐름을 읽어 최적의 치유 위치를 찾는 감각적 보조 수단으로 쓴다." },
-      { name: "정하영", alias: "드림인디고", power: "심해", code: "F_C_C", mood: "감정 표현이 마비될 정도로 자신을 통제하는 조율자. '심해'를 고요한 저기압으로 깔아 폭주하는 전선의 질서를 보호하는 제어 시스템으로 다룬다." },
+      { name: "김미리", alias: "드림마젠타", power: "꿈", code: "F_C_A", mood: "타인의 반응을 희망으로 되돌려 보내는 팀의 연결 중심. 꿈을 은은하게 현실화해 동료를 북돋지만, 밝음이 흔들릴 때는 자기 가치도 반응에 의존한다." },
+      { name: "야마하라 카나", alias: "드림민트", power: "자연", code: "F_C_B", mood: "살아 있는 장면을 희망의 증거로 남기는 사진가. 식물·동물을 조종하는 드루이드형 마법으로 공격·방어·탐색을 돕고, 생명력과 활력을 공급해 동료의 회복을 지원한다." },
+      { name: "정하영", alias: "드림인디고", power: "심해", code: "F_C_C", mood: "과열된 전선을 차분히 가라앉히되 지나친 절제 앞에서는 자기 감정도 표현하기 어려운 조율자. 심해를 펼쳐 대상을 가라앉히고 해수·어둠·깊이·수압을 다룬다." },
       { name: "정희영", alias: "드림블레이즈", power: "화염", code: "F_C_D", mood: "패배를 피드백으로 삼는 호전적 게이머. '화염'을 무지성 방화가 아닌 정확한 타이밍에 콤보를 꽂아 방어선을 부수는 타격 수단으로 운용한다." },
       { name: "향미미", alias: "드림레몬", power: "빛속도", code: "F_C_E", mood: "기다림을 혐오하는 행동파. '빛속도'를 혼자 도망치는 용도가 아닌 아군의 사기와 리듬을 전장에 퍼뜨려 행동을 촉발시키는 선봉의 동력으로 쓴다." },
     ],
@@ -46,8 +46,8 @@ const teams = [
     characters: [
       { name: "제인 스텔라", alias: "스타라이트", power: "집속포격", code: "F_D_A", mood: "피해 산출을 앞세우는 지휘관. '집속포격'을 파괴 본능이 아닌, 불필요한 피해를 줄이고 정확한 탄착군에 화력을 쏟는 전술적 타격 수단으로 운용한다." },
       { name: "리카", alias: "바이올렛", power: "초고속기동", code: "F_D_B", mood: "주저함을 허락하지 않는 기동 타격장. '초고속기동'을 적이 판단할 시간 자체를 빼앗아 전장의 템포를 지배하는 심리적·물리적 압박 수단으로 쓴다." },
-      { name: "매리 트와일", alias: "문나이트", power: "달빛인력", code: "F_D_C", mood: "완벽한 전술각에 집착하는 지원관. '달빛인력'을 전장의 변수들을 끌어당기고 밀어내며 최적의 사선과 각도를 조율하는 통제 기제로 다룬다." },
-      { name: "김연우", alias: "에메랄드", power: "지형스캔", code: "F_D_D", mood: "정보의 불확실성을 혐오하는 작전 브레인. '지형스캔'을 아군의 생존율을 높이고 불확실성을 소거하기 위해 정밀하게 정보를 제어하는 수단으로 운용한다." },
+      { name: "매리 트와일", alias: "문나이트", power: "달빛인력", code: "F_D_C", mood: "드러나지 않는 위치와 지원각으로 전장을 이끄는 전술지원관. 달빛인력으로 위치·사격선·낙하 궤도를 끌어당기고, 아군의 몸과 무장에 힘을 보태 기동과 공격을 강화한다." },
+      { name: "김연우", alias: "에메랄드", power: "지형스캔", code: "F_D_D", mood: "적보다 지형·시야·은폐물·민간 동선을 먼저 읽는 수색타격병. 스캔한 공간 감각을 아군에게 공유해 공간 인지와 조준·회피를 지원한다." },
       { name: "세미 피어리", alias: "피어리", power: "열집속", code: "F_D_E", mood: "군대 내 생존을 위해 명랑함을 택한 돌격수. '열집속'을 선배들에게 가치를 증명하고 적의 방어선을 뚫어내기 위해 에너지를 모으는 타격 수단으로 쓴다." },
     ],
   },
@@ -61,7 +61,7 @@ const teams = [
       { name: "강미란", alias: "리드스카이", power: "수정", code: "F_E_B", mood: "조준점을 잃지 않는 강직한 보호자. '수정'을 물리적 압박 성향에 맞춰 단단한 벽을 치고 일직선으로 꿰뚫어 아군을 정밀하게 보호하는 수단으로 쓴다." },
       { name: "이즈하", alias: "리드베리", power: "야생베리", code: "F_E_C", mood: "야생의 경계심을 품은 생존자. '야생베리'를 화려한 마법이 아닌 본능에 따라 타인과의 거리를 벌리고 적을 사냥하는 생존의 덫으로 다룬다." },
       { name: "샤를로테", alias: "리드포레스트", power: "삼림정령", code: "F_E_D", mood: "느리고 깊게 상처를 묻어두는 숲의 기둥. '삼림정령'을 공격이 아닌 울창한 환경을 펼쳐 장기적으로 치유하고 생명을 유지하는 은폐 수단으로 운용한다." },
-      { name: "미아", alias: "리드로열", power: "황금정령", code: "F_E_E", mood: "공적인 책임감으로 무장한 스타. '황금정령'을 부의 과시가 아닌, 압도적인 카리스마로 대중을 매혹하여 통제하고 팀을 이끄는 무대 장치로 쓴다." },
+      { name: "미아", alias: "리드로열", power: "황금정령", code: "F_E_E", mood: "정령의 도서관의 대외소통가이자 연예계의 신성인 가수와 배우. 계산된 화려함으로 팀과 대중을 안정시키며, 황금정령 카드의 힘을 실체화해 보호·압박·권위의 장을 펼친다." },
     ],
   },
   {
@@ -94,7 +94,7 @@ const teams = [
     name: "프리마",
     tone: "빛바래지 않는 맹세와 왕권의 잔향. 우주 정거장을 거점으로 삼아, 상실된 원초의 성물을 회수하며 구세대가 맺었던 절대적인 맹세를 완수하려 한다.",
     characters: [
-      { name: "유세리나", alias: "프리마브라이드", power: "세정", code: "F_H_A", mood: "정답을 내지 못한 채 사랑을 가르치는 수호자. '세정'을 타인의 얽힌 감정선을 신념의 형식으로 씻어내어 올바른 관계를 맺도록 유도하는 교정 수단으로 쓴다." },
+      { name: "유세리나", alias: "프리마브라이드", power: "세정", code: "F_H_A", mood: "사람들의 마음을 잇고 사랑을 힘으로 믿지만, 정작 자기 사랑의 답은 찾지 못한 웨딩플래너. 세정으로 불순물·저주·오염을 정상적인 부분에서 분리해 씻어 낸다." },
       { name: "노아린", alias: "프리마팬텀", power: "마술", code: "F_H_B", mood: "쾌락주의자이자 기만을 일삼는 의적. '마술'을 고정된 마법이 아닌 수만 가지의 변칙적인 기법을 창조해 적을 완벽하게 농락하는 기만 수단으로 다룬다." },
       { name: "엘리시아", alias: "프리마레지나", power: "왕권결계", code: "F_H_C", mood: "사랑마저 계약화하는 극단적 통제광. '왕권결계'를 방어막이 아닌 출입과 관계 자체를 규정하여 지배를 선포하는 거대한 통치 및 제어 행위로 운용한다." },
     ],
@@ -185,7 +185,7 @@ const villainFactions = [
     characters: [
       { name: "느와르 여제", alias: "엠프레스느와르", code: "F_VA_A", role: "비극", mood: "비극의 총괄 설계자. 비극이라는 개념 자체를 다루며, 대상의 인생과 감정선을 완벽한 파멸의 서사로 조작하는 무대 통제 수단으로 운용한다." },
       { name: "버틀러", alias: "이터널스튜어드", code: "M_VA_B", role: "관통", mood: "오차 없는 살육의 절차를 밟는 은검 집사. 관통 능력을 통제와 규율에 맞춰, 예법에 어긋나는 대상을 소음 없이 꿰뚫는 정밀 처형 수단으로 다룬다." },
-      { name: "오라클", alias: "폴른비저너리", code: "F_VA_C", role: "시간", mood: "운명을 얽어매는 시간의 예언자. 시간 능력을 인과율 조작에 사용하여, 적의 모든 발버둥과 회피 행동조차 파멸로 향하도록 유도하는 구속 수단으로 쓴다." },
+      { name: "오라클", alias: "폴른비저너리", code: "F_VA_C", role: "미래 예지", mood: "과거 루나리움의 플라티나 실버였던 미래의 예언자. 마법소녀의 패배로 이어지는 미래를 보고 절망해 느와르 여제에게 넘어갔다. 지금도 미래 예지만으로 상대의 선택과 회피를 계산해 비극의 설계를 돕는다." },
       { name: "아르카스", alias: "블러드나이트", code: "M_VA_D", role: "혈기", mood: "맹렬한 승리욕을 규율로 통제하는 대검 기사. 혈기 능력을 폭주가 아닌, 정제된 기사도의 묵직한 검격으로 적을 질서 정연하게 짓누르는 제압 수단으로 운용한다." },
     ],
   },
@@ -213,7 +213,7 @@ const villainFactions = [
     image: "F_VD_A",
     teamup: "assets/villain-teamups-ai/villain-teamup-void-ai-v1.png",
     tone: "차원을 압착하고 공간을 지배하여 행성을 통째로 재구축하려는 무자비한 침공 군단. 현지의 법칙을 무시하고 강압적인 군령을 최우선으로 삼는다.",
-    doctrine: "본진은 보이드함선. 차원문을 열고 전진할 때마다 기존 문명의 질서는 무너지고, 그 자리에 군단의 차가운 전술과 통치 법칙이 강제로 편입된다.",
+    doctrine: "본진은 직경 20km의 초대형 보이드 함선. 현실 세계의 강한 차원벽 때문에 함선은 넘어올 수 없다. 침공한 이계에서는 차원문을 열고 행성을 재구축한다.",
     characters: [
       { name: "그란 마샤르", alias: "최고사령관", code: "F_VD_A", role: "차원압착", mood: "도망칠 공간조차 허락하지 않는 무자비한 사령관. 전장을 거시적으로 내려다보며 적의 선택지를 물리적으로 압착하여 지워버린다." },
       { name: "일렉트릭 발키리", alias: "공중에이스", code: "F_VD_B", role: "고압전류", mood: "오차를 허용하지 않는 하늘의 처형자. 빠르고 차가운 판단력과 고압의 전격으로 공중의 흐름을 완벽하게 장악한다." },
@@ -228,13 +228,13 @@ const villainFactions = [
     color: "#d96bff",
     image: "M_VE_A",
     teamup: "assets/villain-teamups-ai/villain-teamup-blank-ai-v1.png",
-    tone: "역사와 기억을 하얀 공백으로 지워버리는 망각의 마도서. 모든 현실을 무대 위 각본으로 비틀고, 확률을 조작해 존재 자체를 무(無)로 돌린다.",
-    doctrine: "본진은 공백극장. 규칙과 상식이 무시되는 극장 안에서, 정화조차 불가능한 절대적인 망각의 권능으로 적을 영원히 격리한다.",
+    tone: "기록·기억·존재를 공백에 먹여 세상에서 사라지게 하는 망각의 세력. 공백극장과 기억 소거로 삭제를 연출하며, 크라운 프린세스는 규칙·제약·조건을 지워 전황을 뒤집는다.",
+    doctrine: "본진은 루브르의 옛 고서 안에 펼쳐지는 공백극장. 삭제 전 수감과 존재 삭제를 구별하며, 공백에 먹힌 존재는 정화·재생으로 돌아오지 않지만 정령의 도서관이 인식하면 부활할 수 있다.",
     characters: [
       { name: "링마스터", alias: "그랜드쇼맨", code: "M_VE_A", role: "공백", mood: "비명과 박수를 양분 삼는 광기의 단장. 무대가 커질수록 힘을 얻으며, 현실의 사건을 잔혹한 유희거리로 연출해낸다." },
       { name: "크라운 프린세스", alias: "왕녀", code: "F_VE_B", role: "규칙삭제", mood: "세상의 질서를 장난감처럼 다루는 왕녀. 웃는 얼굴로 물리 법칙과 상식을 찢어발기며, 상대가 믿던 기반을 순식간에 붕괴시킨다." },
-      { name: "마리오네트", alias: "공백의인형", code: "F_VE_C", role: "기억소거", mood: "감정을 거세한 채 기억을 뜯어내는 인형. 말없는 침묵으로 다가와 대상의 정체성과 가장 소중한 기억의 실밥을 조용히 풀어헤친다." },
-      { name: "아이언 워든", alias: "집행교도관", code: "M_VE_D", role: "중압봉인", mood: "도망칠 틈을 원천 봉쇄하는 무자비한 집행자. 무거운 규율과 강압적인 봉인으로 대상을 영원한 공백의 감옥에 가두어버린다." },
+      { name: "마리오네트", alias: "공백의인형", code: "F_VE_C", role: "기억소거", mood: "감정이 있기에 가까운 사람일수록 지우려 드는 비극의 인형. 다정하게 망설이면서도 실로 기억과 관계의 연결을 끊어 공백에 먹인다." },
+      { name: "아이언 워든", alias: "집행교도관", code: "M_VE_D", role: "중압봉인", mood: "판정과 수감, 기록 접근 차단을 집행하는 교도관. 중압봉인으로 삭제 대상을 소거 때까지 붙잡지만, 봉인만 당한 대상은 아직 존재하며 봉인을 풀어 구출할 수 있다." },
     ],
   },
   {
@@ -284,6 +284,99 @@ function applyCopyEdits() {
 }
 
 applyCopyEdits();
+
+const genevaCharacters = [
+  {
+    "name": "이벨리아",
+    "alias": "데빌",
+    "code": "F_I_A",
+    "age": "31세",
+    "role": "사장 · 옛 리더",
+    "power": "사람의 정신을 조정하는 서큐버스. 상대의 동의 없이 능력을 쓰지 않는다. 정기를 거의 먹지 않아 몸 상태가 좋지 않으며, 초커로 본능을 억제한다.",
+    "mood": "집에서 게임하는 생활을 좋아하는 극단적인 집순이. 친구들에게 대놓고 기대고 외출 대신 집 모임을 권한다. 중요한 결정을 내릴 때는 늘어지던 말이 짧고 또렷해진다."
+  },
+  {
+    "name": "양애린",
+    "alias": "시스터",
+    "code": "F_I_B",
+    "age": "21세",
+    "role": "괴수 소환 · 도시 복구",
+    "power": "상상의 괴수 666마리를 소환한다. 묵시록을 재현하던 괴수들은 이제 도시를 복구하는 일꾼이 됐다.",
+    "mood": "신앙을 진지하게 지키는 천주교 신자지만 입담과 웃음은 호탕하다. 친구들 앞에서는 옛 허세를 직접 흉내 내다가 자기부터 민망해하며 웃는다. 앙헬과 단짝이다."
+  },
+  {
+    "name": "샤를로테 저펜터",
+    "alias": "앙헬",
+    "code": "F_I_C",
+    "age": "26세",
+    "role": "나팔 · 저주 정화",
+    "power": "종말의 나팔에 담긴 현상을 실현한다. 지금은 주로 정화의 파도로 저주와 문제를 깨끗이 지운다.",
+    "mood": "독일 출신이며 양애린과 단짝이다. 평소에는 짧고 담담하게 반응하지만, 감정이 역치를 넘으면 애정과 서운함을 상대가 민망할 만큼 솔직하게 쏟아낸다."
+  },
+  {
+    "name": "타마미하라 아야네",
+    "alias": "폭스",
+    "code": "F_I_D",
+    "age": "20세 (본인 주장)",
+    "role": "능력 복제 · 만능 담당",
+    "power": "아는 사람의 능력을 약 절반의 성능으로 복제한다. 여러 역할을 맡을 수 있어 네 명 중 특히 바쁘다.",
+    "mood": "실제 연령은 측정 불가이며 2,000세 이상이다. 타마모노마에의 그림자 중 하나인 구미호로, 사혼의 구슬 일부를 지녔다. 친구를 돕고 자기 작업에도 친구들의 참견을 반기지만, 과거 모습을 두려워해 초커와 사슬을 풀지 않는다."
+  }
+];
+
+const genevaProfileGrid = document.querySelector("#genevaProfileGrid");
+const genevaFormButtons = [...document.querySelectorAll("[data-geneva-form]")];
+let activeGenevaForm = "both";
+
+function genevaFormImage(character, form) {
+  const former = form === "former";
+  const label = former ? "옛 빌런 형상" : "평상시";
+  const file = `${character.code}${former ? "F" : ""}.webp`;
+  return `
+    <figure class="profile-form">
+      <img src="assets/profiles/geneva/${form}/${file}" alt="${character.name} ${label}" width="1216" height="832" loading="lazy" decoding="async">
+      <figcaption>${label}</figcaption>
+    </figure>
+  `;
+}
+
+function renderGenevaProfiles() {
+  if (!genevaProfileGrid) return;
+  genevaProfileGrid.innerHTML = genevaCharacters.map((character) => {
+    const both = activeGenevaForm === "both";
+    const images = both
+      ? genevaFormImage(character, "normal") + genevaFormImage(character, "former")
+      : genevaFormImage(character, activeGenevaForm);
+    return `
+      <article class="profile-card geneva-person-card">
+        <div class="profile-images ${both ? "is-both" : "is-single"}">${images}</div>
+        <div class="profile-copy">
+          <span>${character.alias}</span>
+          <h3>${character.name}</h3>
+          <dl>
+            <div><dt>나이</dt><dd>${character.age}</dd></div>
+            <div><dt>업무</dt><dd>${character.role}</dd></div>
+          </dl>
+          <p>${character.power}</p>
+          <p class="profile-daily">${character.mood}</p>
+        </div>
+      </article>
+    `;
+  }).join("");
+  genevaFormButtons.forEach((button) => {
+    const active = button.dataset.genevaForm === activeGenevaForm;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+}
+
+genevaFormButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    activeGenevaForm = button.dataset.genevaForm || "both";
+    renderGenevaProfiles();
+  });
+});
+renderGenevaProfiles();
 
 const progress = document.querySelector(".progress span");
 const introLoader = document.querySelector(".intro-loader");
@@ -587,7 +680,7 @@ if (observedSections.length) {
 }
 
 const revealItems = [
-  ...document.querySelectorAll(".section-title, .team-grid, .villain-grid, .team-profile-tabs, .villain-profile-tabs, .team-profile-header, .profile-form-switch, .profile-grid, .world-slider, .media-grid"),
+  ...document.querySelectorAll(".section-title, .geneva-company, .geneva-people-heading, .team-grid, .villain-grid, .team-profile-tabs, .villain-profile-tabs, .team-profile-header, .profile-form-switch, .profile-grid, .world-slider, .media-grid"),
 ];
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

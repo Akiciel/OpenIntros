@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>마법소녀대전 - 기적과 비극의 교차점</title>
-  <meta name="description" content="현실과 이계, 희망과 비극이 교차하는 마법소녀대전 공식 아카이브.">
-  <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js" defer></script>
+  <meta name="description" content="현실과 이계, 희망과 비극이 교차하는 마법소녀대전. 제네바 4인을 포함한 인물과 세력 소개.">
+  <link rel="stylesheet" href="styles.css?v=20261011-geneva-2">
+  <script src="scripts.js?v=20261011-geneva-2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#teams">본문으로 이동</a>
@@ -29,6 +29,7 @@
       <span>마법소녀대전</span>
     </a>
     <nav class="nav" aria-label="주요 메뉴">
+      <a href="#geneva">GENEVA</a>
       <a href="#teams">TEAMS</a>
       <a href="#characters">CHARACTER</a>
       <a href="#villains">VILLAINS</a>
@@ -38,6 +39,7 @@
 
   <aside class="side-index" aria-label="페이지 섹션">
     <a href="#top" aria-label="Top"></a>
+    <a href="#geneva" aria-label="제네바"></a>
     <a href="#teams" aria-label="Teams"></a>
     <a href="#characters" aria-label="Characters"></a>
     <a href="#villains" aria-label="Villains"></a>
@@ -53,10 +55,43 @@
         <p>
           기적과 맹세, 그리고 엇갈린 소원들이 격돌하는 전장.
         </p>
+        <a class="geneva-update-link" href="#geneva"><span>4차 업데이트</span> 제네바 4인 추가 <b aria-hidden="true">↓</b></a>
       </div>
       <div class="scroll-cue" aria-hidden="true">
         <span>SCROLL</span>
       </div>
+    </section>
+
+    <section id="geneva" class="section geneva-section" aria-labelledby="genevaTitle">
+      <div class="section-title">
+        <p>GENEVA / 4TH UPDATE</p>
+        <h2 id="genevaTitle">갱생한 빌런들의 회사, 제네바</h2>
+      </div>
+      <img class="geneva-banner" src="assets/geneva/update-banner.webp" alt="갱생한 빌런들의 회사 제네바 출현. 제네바 4인 추가" width="1983" height="793" loading="lazy" decoding="async">
+      <div class="geneva-company">
+        <div class="geneva-company-copy">
+          <span class="eyebrow">서울 강남 · 상장 기업 · 하우스 클리닝</span>
+          <h3>전장이 남긴 것은<br>저희가 치워드립니다.</h3>
+          <p>대외적으로는 하우스 클리닝 업체. 실제 청소도 하지만, 제네바가 돈을 잘 버는 이유는 따로 있다. 마법소녀든 빌런이든 감당하기 어려운 피해를 남기면 이곳에 복구를 의뢰한다. 잔해와 저주를 걷어내고 부서진 도시를 되살리는 비용은 꽤 비싸다.</p>
+          <p>12년 전, 재미로 세상을 혼돈에 빠뜨리려던 네 빌런은 프리마 3인방에게 패배하고 정화됐다. 이제는 그 시절을 흑역사로 여기는 친한 친구들. 매월 프리마에 보고서를 올리고 특마대의 감찰을 받으며, 어느 진영에도 속하지 않는 중립 기업을 운영한다.</p>
+          <p class="geneva-company-note">회사 자체는 공개되어 있다. 그러나 옛 빌런 이력과 초상 복구 업무는 마법소녀·빌런의 존재와 함께 일반 대중에게 비공개다.</p>
+        </div>
+        <figure class="geneva-office">
+          <img src="assets/geneva/office-day.webp" alt="서울 강남 빌딩에 있는 제네바 사무실" width="1024" height="1024" loading="lazy" decoding="async">
+          <figcaption>서울 강남 · 제네바 사무실</figcaption>
+        </figure>
+      </div>
+      <div class="geneva-people-heading">
+        <p class="eyebrow">네 명의 친구, 네 가지 복구 방식</p>
+        <h3>제네바의 구성원</h3>
+        <p>지금의 네 사람은 마법소녀도 빌런도 아니다. 힘을 쓸 때 되찾는 모습은 과거의 빌런 형상이다.</p>
+      </div>
+      <div class="profile-form-switch" aria-label="제네바 형상 보기">
+        <button class="form-toggle is-active" type="button" data-geneva-form="both" aria-pressed="true">평상시 / 옛 빌런 형상</button>
+        <button class="form-toggle" type="button" data-geneva-form="normal" aria-pressed="false">평상시</button>
+        <button class="form-toggle" type="button" data-geneva-form="former" aria-pressed="false">옛 빌런 형상</button>
+      </div>
+      <div class="profile-grid geneva-profile-grid" id="genevaProfileGrid"></div>
     </section>
 
     <section id="teams" class="section team-section">
@@ -95,7 +130,7 @@
           <p>무너진 마음을 다시 일으키는, 가장 찬란하고 소란스러운 공명.</p>
           <div class="team-card-detail">
             <strong>희망과 응원의 공명</strong>
-            <p>누군가를 향한 맹목적인 응원을 물리적인 마력으로 치환하여 싸웁니다. 압도적인 개인의 무력보다는 끈끈한 팀워크와 동료의 연결을 무기로, 절망이 깔린 전장을 순식간에 희망찬 무대로 뒤바꿔 놓습니다.</p>
+            <p>희망과 응원으로 서로의 남은 마력을 연결해 싸웁니다. 목소리와 움직임을 맞춰 팀워크와 마법의 효율·출력을 높이지만, 기술마다 마력을 소비하며 고갈된 마력을 즉시 충전할 수는 없습니다.</p>
           </div>
         </article>
 
@@ -127,8 +162,8 @@
           <h3>성휘만화경</h3>
           <p>균열을 넘어온 이방인, 돌아갈 곳을 품고 싸우는 생존자들.</p>
           <div class="team-card-detail">
-            <strong>차원 카드와 영웅 투영</strong>
-            <p>돌아가야 할 가족과 동경하는 이를 가슴에 품은 채, 이계 영웅의 힘을 차원 카드에 투영하여 싸웁니다. 극심한 마력 반동 속에서도 살아남아 균열을 봉쇄하고 '귀환'하기 위해 낯선 세계에서 처절한 사투를 벌입니다.</p>
+            <strong>성흔 카드와 영웅 투영</strong>
+            <p>돌아가야 할 가족과 동경하는 이를 품은 채, 성흔 카드에 기록된 이계 영웅의 장비·기술·속성을 자신의 마력으로 임시 구현해 싸웁니다. 투영할 때마다 신체와 마력의 반동을 겪으면서도, 생존과 귀환을 위해 균열을 봉쇄합니다.</p>
           </div>
         </article>
 
